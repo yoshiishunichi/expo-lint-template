@@ -5,28 +5,21 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "@react-native-community",
     "prettier"
   ],
   "plugins": [
-    "react",
-    "@typescript-eslint",
-    "react-hooks",
     "import",
+    "react",
     "sort-keys-fix",
+    "@typescript-eslint",
     "typescript-sort-keys",
     "unused-imports"
   ],
   "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [
-      2,
-      {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    ],
-    "unused-imports/no-unused-imports": "error",
+    "import/no-duplicates": "error",
     "import/order": [
       "error",
       {
@@ -46,10 +39,10 @@
         }
       }
     ],
-    "import/no-duplicates": "error",
-    "@next/next/no-img-element": "off",
     "react/jsx-sort-props": "error",
+    "react/react-in-jsx-scope": "off",
     "sort-keys-fix/sort-keys-fix": "error",
-    "typescript-sort-keys/interface": "error"
+    "typescript-sort-keys/interface": "error",
+    "unused-imports/no-unused-imports": "error"
   }
 }
